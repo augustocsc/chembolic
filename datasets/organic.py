@@ -13,7 +13,7 @@ features = {'pearson': ['e+LUMO', 'EPA', 'μ+', 'eHOMO', 'e+HOMO', 'μ', 'SNu', 
             'most_used': ['sN', 'B5', 'SH', 'SInt', 'EPA', 'SNu', 'e+LUMO', 'eHOMO', 'ε', 'η'],
             'base': ['ε', 'q', 'eHOMO', '%VH', 'B1', 'EPA', 'SNu', 'SInt', 'SH']}
 
-def get_data(columns = 'all',  test_size):
+def get_data(test_size, columns = 'all'):
   #Reading the data
   data = pd.read_csv('data/organicData.txt', delim_whitespace=True)
 
